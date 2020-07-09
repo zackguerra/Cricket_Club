@@ -1,0 +1,1209 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/slideshow/cricket-0033.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.body_section {
+  /* background-image: url(../images/slideshow/cricket-0033.jpg); */
+  width: 100%;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+/* p {
+   font-size: 1em;
+   text-align: justify;
+ } */
+
+/*MODAL BTN READ MORE STYLE */
+
+.buttonread {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.buttonread span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonread span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonread:hover span {
+  padding-right: 25px;
+}
+
+.buttonread:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 5;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: scroll;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+  /* background-color: #fefefe; */
+  background: white;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+
+.close1, .close2, .close3 {
+  color: #e74c3c;
+  float: right;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.close1:hover, .close2:hover, .close3:hover, .close1:focus, .close2:focus, .close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card .bottom-text .btn {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.card .bottom-text .btn a {
+  text-decoration: none;
+  background: #e74c3c;
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+
+.card .bottom-text .btn a:hover {
+  transform: scale(0.9);
+}
+
+/* END BUTTON STYLE*/
+
+/* Header Menu */
+
+.header {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 30px;
+  width: 100%;
+}
+
+.header ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Social Media Links */
+
+.social-media {
+  display: absolute;
+  float: right;
+  right: 10px;
+}
+
+.social-media li {
+  margin-right: 35px;
+}
+
+.social-media a i {
+  font-size: 20px;
+  margin: 0;
+  margin-top: 5px;
+  color: black;
+}
+
+.social-media ul {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Menu */
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0px;
+  height: 75px;
+  width: 100%;
+  align-items: center;
+  z-index: 4;
+  list-style-type: none;
+}
+
+#logo-image {
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+  /* Change - Lucas */
+}
+
+nav {
+  margin-left: 100px;
+  /* Change - Lucas */
+}
+
+nav:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-content-li:hover {
+  background-color: rgb(244, 155, 0, 0.75);
+}
+
+nav ul li {
+  display: inline-block;
+  width: 10vw;
+  text-align: center;
+}
+
+.submenu-content li {
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.submenu-content-a {
+  display: block;
+  /* Change - Lucas */
+}
+
+.submenu-content li:hover {
+  background-color: rgb(244, 155, 0, 0.8);
+  border-bottom: 3px solid white;
+}
+
+.menu-a {
+  display: block;
+  font-weight: bold;
+  /* Change - Lucas */
+  text-transform: uppercase;
+  /* Change - Lucas */
+}
+
+nav ul li a {
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav ul ul li a:hover {
+  box-shadow: none;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid white;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s;
+}
+
+nav ul ul ul {
+  border-top: none;
+}
+
+nav ul li:hover>ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 10vw;
+  float: none;
+  display: list-item;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Change - Lucas */
+  border-bottom: 3px solid transparent;
+  /* Change - Lucas */
+}
+
+nav ul ul li a {
+  line-height: 50px;
+}
+
+.show, .icon, input {
+  display: none;
+}
+
+/* STARTING GRID LAYOUT */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.2fr 0.2fr 0.2fr 0.2fr;
+  margin: 50px 20px;
+  gap: 80px;
+  grid-template-areas: "about" "councilcards" "life-members" "programs" "facilities";
+  /* background-color: rgba(255, 255, 255, 0.4); */
+}
+
+.grid-container li {
+  font-size: 2rem;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr;
+  gap: 1px;
+  grid-template-areas: "abouttxt";
+  grid-area: about;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#aboutinit {
+  color: #fff;
+  background-color: rgb(244, 155, 0, 0.7);
+  /* margin-left: 0; */
+  width: 40%;
+  /* height: 40vh; */
+  padding: 30px 50px !important;
+  /* margin-top: 200px; */
+  margin-left: 50px;
+  /* font-weight: bolder; */
+  /* font-size: 20px; */
+}
+
+.abouttxt {
+  grid-area: abouttxt;
+  /* background-image: url(../images/slideshow/cricket-0033.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+  /* height: 70vh; */
+  color: rgb(0, 0, 0);
+  padding-left: 0;
+  text-align: justify;
+}
+
+.abouttxt ul {
+  padding: 30px;
+}
+
+.councilcards {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 0.1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "titlestd titlestd titlestd" "pic1 pic2 pic3" "pic4 pic5 pic6";
+  grid-area: councilcards;
+  background-color: rgb(244, 155, 0, 0.8);
+}
+
+.councilcards img {
+  background-image: linear-gradient(to right, white, orange);
+  text-align: center;
+}
+
+.pic1 {
+  grid-area: pic1;
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  /* display: flex;
+  align-self: center;
+  flex-flow: column;
+  align-items: center; */
+}
+
+.pic2 {
+  grid-area: pic2;
+  z-index: 3;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pic3 {
+  grid-area: pic3;
+  z-index: 3;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pic4 {
+  grid-area: pic4;
+  z-index: 2;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pic5 {
+  grid-area: pic5;
+  z-index: 2;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pic6 {
+  grid-area: pic6;
+  z-index: 2;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* .life-members {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifetxt";
+  grid-area: life-members;
+  background-color: rgba(255, 255, 255, 0.8);
+} */
+
+/* .lifeimg img {
+  display: block;
+  text-align: center;
+  width: 50%;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* .titlestd {
+  grid-area: titlestd;
+} */
+
+/* .life-members h1 {
+  width: auto;
+  height: auto; 
+  align-items: center; 
+  align-self: center;
+} */
+
+/* .lifetxt {
+  grid-area: lifetxt;
+  background-color: rgb(244, 155, 0, 0.4);
+} */
+
+/* .lifetxt p {
+  font-size: 1.8rem;
+  line-height: 40px;
+  text-align: justify;
+  padding: 30px 20px;
+} */
+
+/* LIFE MEMBERS GRID */
+
+.life-members {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifetitle lifetitle" "lifecontainer1 lifecontainer2" "lifecontainer3 lifecontainer4" "lifecontainer5 lifecontainer6";
+  grid-area: life-members;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.liferef1, .liferef2, .liferef3, .liferef4, .liferef5, .liferef6 {
+  padding: 30px 5px;
+}
+
+.lifecontainer1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifepic1" "liferef1";
+  grid-area: lifecontainer1;
+}
+
+.lifepic1 {
+  grid-area: lifepic1;
+}
+
+.liferef1 {
+  grid-area: liferef1;
+}
+
+.lifetitle {
+  grid-area: lifetitle;
+}
+
+.lifecontainer2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifepic2" "liferef2";
+  grid-area: lifecontainer2;
+}
+
+.lifepic2 {
+  grid-area: lifepic2;
+}
+
+.liferef2 {
+  grid-area: liferef2;
+}
+
+.lifecontainer3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifepic3" "liferef3";
+  grid-area: lifecontainer3;
+}
+
+.lifepic3 {
+  grid-area: lifepic3;
+}
+
+.liferef3 {
+  grid-area: liferef3;
+}
+
+.lifecontainer4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifepic4" "liferef4";
+  grid-area: lifecontainer4;
+}
+
+.lifepic4 {
+  grid-area: lifepic4;
+}
+
+.liferef4 {
+  grid-area: liferef4;
+}
+
+.lifecontainer5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifepic5" "liferef5";
+  grid-area: lifecontainer5;
+}
+
+.lifepic5 {
+  grid-area: lifepic5;
+}
+
+.liferef5 {
+  grid-area: liferef5;
+}
+
+.lifecontainer6 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifepic6" "liferef6";
+  grid-area: lifecontainer6;
+}
+
+.lifepic6 {
+  grid-area: lifepic6;
+}
+
+.liferef6 {
+  grid-area: liferef6;
+}
+
+/* END LIFE GRID */
+
+.programs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 1.4fr;
+  gap: 1px 1px;
+  grid-template-areas: "titlestd titlestd" "programstxt imgprog";
+  grid-area: programs;
+  background-color: rgb(244, 155, 0, 0.8);
+}
+
+.programs h1 {
+  width: auto;
+  height: auto;
+}
+
+.titlestd {
+  grid-area: titlestd;
+}
+
+.programstxt {
+  grid-area: programstxt;
+  /* background-color: rgb(244, 155, 0, 0.75); */
+}
+
+.programstxt ul {
+  padding: 30px;
+}
+
+.programstxt h1 {
+  text-align: center;
+}
+
+.imgprog {
+  /* background-color: rgb(244, 155, 0, 0.4); */
+}
+
+.imgprog img {
+  /* display: none; */
+  grid-area: imgprog;
+  /* margin-top: 30vh; */
+  width: 100%;
+  /* border: 30px solid rgb(255, 255, 255, 0.5); */
+  right: 5vw;
+}
+
+.facilities {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.7fr;
+  gap: 1px 1px;
+  grid-template-areas: "titlestd" "facilitiestxt";
+  grid-area: facilities;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.facilities h1 {
+  width: auto;
+  height: auto;
+  align-items: center;
+  align-self: center;
+}
+
+.facilities ul {
+  padding: 30px;
+}
+
+/* STANDARD STYLES */
+
+.cricketlist {
+  display: block;
+}
+
+.cricketlist li {
+  font-size: 1em !important;
+}
+
+.lifetxt, .programstxt, .facilitiestxt p {
+  font-size: 1em !important;
+  line-height: 30px;
+  text-align: justify;
+  padding: 30px 20px;
+}
+
+.facilitiestxt li {
+  font-size: 1em !important;
+}
+
+.about, .councilcards, .life-members, .programs, .facilities {
+  padding: 30px 20px;
+}
+
+/*TEST FACILITIES CIRCLE*/
+
+.imgfacil {
+  float: left;
+  /* max-width: 50%;
+  max-height: 50%; */
+  width: 30%;
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 30px 30px 30px;
+}
+
+.imgfacil2 {
+  display: none;
+}
+
+/*END FACILITIES TEST */
+
+/* END OF THE GRID LAYOUT */
+
+/*ABOUT CONTENT*/
+
+.about {
+  display: flex;
+  margin-top: 20px;
+}
+
+.about h1 {
+  font-family: inherit;
+  font-size: 4rem;
+  color: white !important;
+  text-shadow: 3px 3px #000;
+}
+
+/* .abouttxt {
+  width: 4hw;
+  text-align: justify;
+  padding: 2rem;
+} */
+
+/* COUNCIL CARDS STYLE */
+
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic6 {
+  width: min-content;
+  height: 350px;
+  /* background-color: #e74c3c; */
+  align-content: center;
+}
+
+/* .title {
+  margin-top: 20px;
+  height: 100px;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: inherit;
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+.pics {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  /* background: #f2f2f2; */
+  /* text-align: center; */
+}
+
+.container {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  height: 280px;
+  width: 360vw;
+  max-width: 360px;
+  margin: 0 20px;
+  background: white;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  height: 470px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .img {
+  height: 200px;
+  width: 100%;
+}
+
+.card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .top-text {
+  padding: 5px;
+}
+
+.card .top-text .name {
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+}
+
+.card .top-text p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+
+.card .bottom-text {
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+
+.card:hover .bottom-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card .bottom-text .textcard {
+  text-align: justify;
+}
+
+.card .bottom-text .btn {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.card .bottom-text .btn a {
+  text-decoration: none;
+  background: #e74c3c;
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+
+.card .bottom-text .btn a:hover {
+  transform: scale(0.9);
+}
+
+/* GO TO TOP BUTTON */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(244, 155, 0, 0.75);
+  /* background-color: red; */
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*ENDING COUNCIL CARDS STYLE */
+
+/* Footer */
+
+footer {
+  display: grid;
+  grid-template-columns: 1.5fr 0.7fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  width: 100%;
+  grid-template-areas: "footer-img footer-followUs";
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+footer i {
+  font-size: 26px;
+}
+
+#footerFace {
+  color: rgb(66, 103, 178);
+}
+
+#footerInsta {
+  color: rgb(193, 53, 132);
+}
+
+#footerTwit {
+  color: rgb(29, 161, 242);
+}
+
+.footer-img {
+  width: 40vw;
+}
+
+#copyright {
+  position: sticky;
+  bottom: 0px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0.5vh 0;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* NEW GRID */
+
+@media screen and (max-width: 375px) {
+  .about {
+    /* width: 100%; */
+    /* height: 800px; */
+  }
+  #aboutinit {
+    /* width: 100px !important; */
+    /* height: 50vh !important; */
+    /* margin-top: 400px !important;    */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #aboutinit {
+    /* height: 37vh; */
+    /* width: 650px !important; */
+    /* margin-top: 530px !important; */
+    margin-left: 50px;
+  }
+  .imgfacil2 {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* 
+  html,
+  body, */
+  /* .grid-container {
+    height: 100%;
+    margin: 0;
+    background-color: white;
+  } */
+  .menu {
+    z-index: 5;
+  }
+  /* Header - Social Media */
+  .header {
+    width: 100%;
+  }
+  .social-media {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+  }
+  .social-media li {
+    /* display: inline-block; */
+    margin-left: 20px;
+  }
+  /* Menu */
+  #menu_media {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 75px;
+    opacity: 0.8;
+  }
+  nav {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  nav ul {
+    margin-right: 0px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .submenu-content-a {
+    display: block;
+  }
+  nav .logo {
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show+a, ul {
+    display: none;
+  }
+  nav ul li, nav ul ul li {
+    display: block;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Change - Lucas */
+  }
+  nav ul li a:hover {
+    box-shadow: none;
+  }
+  .show {
+    display: block;
+    color: white;
+    font-size: 15px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+    font-weight: bold;
+    /* Change - Lucas */
+    text-transform: uppercase;
+    /* Change - Lucas */
+  }
+  .show:hover {
+    color: cyan;
+  }
+  .icon {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul {
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a {
+    padding-left: 0;
+    /* Change - Lucas */
+    display: block;
+    /* Change - Lucas */
+  }
+  nav ul ul ul a {
+    padding-left: 0px;
+    /* Change - Lucas */
+    text-align: left;
+    /* Change - Lucas */
+    display: block;
+    /* Change - Lucas */
+  }
+  nav ul ul ul li {
+    position: static;
+  }
+  [id^="btn"]:checked+ul {
+    display: block;
+  }
+  nav ul ul li {
+    border-bottom: 0px;
+  }
+  span.cancel:before {
+    content: "\f00d";
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.1fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    gap: 80px 0px;
+    grid-template-areas: "about" "councilcards" "life-members" "programs" "facilities";
+    margin: 50px 20px
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "abouttxt";
+    grid-area: about;
+    margin-top: 0;
+  }
+  /* #aboutinit {    
+    width: 50%;
+    height: 35vh;
+    margin-top: 550px;
+    margin-left: 10px;
+  } */
+  .abouttxt {
+    grid-area: abouttxt;
+    /* background-color: rgb(244, 155, 0, 0.75) !important; */
+    /* width: fit-content; */
+  }
+  .councilcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "titlestd titlestd" "pic1 pic2" "pic3 pic4" "pic5 pic6";
+    grid-area: councilcards;
+    background-color: rgb(244, 155, 0, 0.4);
+    margin-top: 130px;
+  }
+  .councilcards h1 {
+    font-size: 2.5rem;
+  }
+  .titlestd {
+    grid-area: titlestd;
+  }
+  .pic1 {
+    grid-area: pic1;
+    /* width: 600px; */
+    z-index: 4;
+  }
+  .pic2 {
+    grid-area: pic2;
+    z-index: 4;
+  }
+  .pic3 {
+    grid-area: pic3;
+    z-index: 3;
+  }
+  .pic4 {
+    grid-area: pic4;
+    z-index: 3;
+  }
+  .pic5 {
+    grid-area: pic5;
+  }
+  .pic6 {
+    grid-area: pic6;
+  }
+  /* .life-members {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px;
+    grid-template-areas: "lifetxt";
+    grid-area: life-members;
+  } */
+  .titlestd {
+    grid-area: titlestd;
+  }
+  .lifetxt {
+    grid-area: lifetxt;
+  }
+  .programs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 2fr;
+    gap: 1px 1px;
+    grid-template-areas: "titlestd" "programstxt";
+    grid-area: programs;
+  }
+  .titlestd {
+    grid-area: titlestd;
+  }
+  .programstxt {
+    grid-area: programstxt;
+  }
+  .imgprog {
+    grid-area: imgprog;
+    display: none;
+  }
+  .facilities {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr;
+    gap: 1px 1px;
+    grid-template-areas: "titlestd" "facilitiestxt";
+    grid-area: facilities;
+  }
+  .imgfacil {
+    float: left;
+    width: 500px;
+    border-radius: 10px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    border-radius: 50%;
+    shape-outside: circle();
+    margin: 30px 30px 30px 10px;
+  }
+  .imgfacil2 {
+    width: 500px;
+    border-radius: 10px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    border-radius: 50%;
+    shape-outside: circle();
+    margin: 30px 30px 30px 10px;
+  }
+  .titlestd {
+    grid-area: titlestd;
+  }
+  .facilitiestxt {
+    grid-area: facilitiestxt;
+    padding: 2rem;
+    width: fit-content;
+  }
+}
